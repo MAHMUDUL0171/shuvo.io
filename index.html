@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HalalJapanGuide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="trp.css">
+</head>
+<body>
+  <header class="header-3d">
+    <nav>
+      <div class="logo">
+        <a href="#" class="logo-3d"><i class="fas fa-mosque"></i> HalalJapanGuide</a>
+      </div>
+      <ul>
+        <li><a href="#" class="home-link nav-link-3d">Home</a></li>
+        <li><a href="#" class="category-link nav-link-3d" data-category="restaurants">Restaurants</a></li>
+        <li><a href="#" class="category-link nav-link-3d" data-category="grocery-stores">Grocery Stores</a></li>
+        <li><a href="#" class="category-link nav-link-3d" data-category="prayer-facilities">Prayer Facilities</a></li>
+        <li><a href="#" class="category-link nav-link-3d" data-category="travel-guides">Travel Guides</a></li>
+        <li><a href="#" class="category-link nav-link-3d" data-category="recycle-shops">Recycle Shop</a></li>
+        <li class="dropdown">
+          <a href="#" class="category-link dropdown-toggle nav-link-3d" data-category="community">Community</a>
+          <div class="dropdown-content">
+            <a href="#" class="category-link nav-link-3d" data-category="graveyards">Graveyards</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title-3d">Discover Muslim-friendly Options in Japan</h1>
+        <p class="hero-text-3d">Find Halal restaurants, grocery stores, prayer facilities, and travel guides.</p>
+        <div class="search-bar search-bar-3d">
+          <input type="text" id="search-input" placeholder="Search location or keyword">
+          <button id="search-button" class="button-3d"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="time-prayer" id="time-prayer">
+      <div class="time-prayer-container">
+        <div id="local-time" class="local-time-3d"></div>
+        <div id="prayer-times" class="prayer-times-3d">
+          <div class="prayer-time" id="fajr"></div>
+          <div class="prayer-time" id="sunrise"></div>
+          <div class="prayer-time" id="dhuhr"></div>
+          <div class="prayer-time" id="asr"></div>
+          <div class="prayer-time" id="magrib"></div>
+          <div class="prayer-time" id="isha"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="regions" id="regions">
+      <h2 id="region-title" class="region-title-3d">Regions</h2>
+      <div class="region-container"></div>
+    </section>
+  </main>
+
+  <footer class="footer-3d">
+    <p>&copy; 2024 HalalJapanGuide. All rights reserved.</p>
+  </footer>
+
+  <script src="trp.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</body>
+</html>
